@@ -6,7 +6,14 @@ Infoset Android SDK allows you to integrate [Infoset Chat](https://infoset.app) 
 
 # Installation
 
-TODO: Installation steps to be added after the SDK is published to Maven.
+Infoset Android SDK supports API 15 and above.
+
+Add the following dependency to your app's `build.gradle` file:
+```gradle
+dependencies {
+    implementation 'app.infoset.android:infoset-sdk:1.0.0'
+}
+```
 
 Your application will need a permission to use the Internet. Add the following line to your **AndroidManifest.xml**:
 
@@ -15,7 +22,7 @@ Your application will need a permission to use the Internet. Add the following l
 ```
 <div class="clear"></div>
 
-If you want to allow users to upload files from their external storage using chat view, this permission is also needed:
+You will need to include the [READ_EXTERNAL_STORAGE](http://developer.android.com/reference/android/Manifest.permission.html#READ_EXTERNAL_STORAGE) permission if you have enabled attachments in your Infoset chat widget:
 
 ```xml
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -73,7 +80,7 @@ public void startFullScreenChat() {
 If you like to control the place and size of the InfosetChatView, you might want to add it to your app either by including a view in XML and accessing in your code:
 
 ```xml
-<com.infoset.android.InfosetChatView
+<app.infoset.android.InfosetChatView
     android:id="@+id/embedded_chat_view"
     android:layout_width="match_parent"
     android:layout_height="400dp"/>
@@ -194,7 +201,7 @@ There are two ways to open the chat view – using Activity or Fragment. You can
 In order to open a chat view in new Activity, you need to declare **InfosetChatActivity** in your manifest. Add the following line to **AndroidManifest.xml**, between `<application></application>` tags:
 
 ```xml
-<activity android:name="com.infoset.android.InfosetChatActivity" android:configChanges="orientation|screenSize" />
+<activity android:name="app.infoset.android.InfosetChatActivity" android:configChanges="orientation|screenSize" />
 ```
 
 <div class="clear"></div>
@@ -202,7 +209,7 @@ In order to open a chat view in new Activity, you need to declare **InfosetChatA
 Finally, add the following code to your application, in a place where you want to open the chat view (e.g. button listener). You need to provide a Context (your Activity or Application object), your Infoset chat widget API key and Android key (taken from the [dashboard](https://dashboard.infoset.app/settings/chat?tab=chatWidgets) and, optionally, comma-separated tags to route the chats:
 
 ```java
-Intent intent = new Intent(context, com.infoset.android.InfosetChatActivity.class);
+Intent intent = new Intent(context, app.infoset.android.InfosetChatActivity.class);
 Bundle config = new InfosetChatConfiguration.Builder()
 	.setApiKey("<api_key>")
 	.setAndroidKey("<android_key>")
