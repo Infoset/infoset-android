@@ -6,7 +6,7 @@ Infoset Android SDK allows you to integrate [Infoset Chat](https://infoset.app) 
 
 # Installation
 
-Infoset Android SDK supports API 15 and above.
+Infoset Android SDK supports API 16 and above.
 
 Add the following dependency to your app's `build.gradle` file:
 ```gradle
