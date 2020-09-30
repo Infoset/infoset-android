@@ -12,8 +12,8 @@ import app.infoset.android.InfosetChatConfiguration;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String INFOSET_API_KEY = "pFz6QIAxs8Gmf56R8u4kYNwo1apWCNTrN5YJSET0";
-    public static final String INFOSET_ANDROID_KEY = "6jrMxVVpPPjXYagluHdwZXJuZ7ejP2iw";
+    public static final String INFOSET_API_KEY = "your_api_key";
+    public static final String INFOSET_ANDROID_KEY = "your_android_key";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
