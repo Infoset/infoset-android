@@ -1,3 +1,6 @@
+![Maven Central](https://img.shields.io/maven-central/v/app.infoset.android/infoset-sdk)
+![GitHub](https://img.shields.io/github/license/infoset/infoset-android)
+
 <img src="https://user-images.githubusercontent.com/13895224/94475996-8de39c80-01d8-11eb-8771-e590b33c612e.png" alt="Infoset" width="300" />
 
 # Infoset Android SDK
