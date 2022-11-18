@@ -71,6 +71,21 @@ public class FullScreenWindowActivityExample extends AppCompatActivity implement
     }
 
     @Override
+    public void onRoomOpened(long roomId) {
+        Toast.makeText(FullScreenWindowActivityExample.this, "onRoomOpened " + roomId, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onRoomClosed(long roomId) {
+        Toast.makeText(FullScreenWindowActivityExample.this, "onRoomClosed " + roomId, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onRoomReopened(long roomId) {
+        Toast.makeText(FullScreenWindowActivityExample.this, "onRoomReopened " + roomId, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
     public boolean handleUri(Uri uri) {
         return false;
     }

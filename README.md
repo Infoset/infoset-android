@@ -131,6 +131,7 @@ This listener gives you opportunity to:
 
 * handle the case when the user wants to attach a file in chat,
 * subscribe to incoming messages, so that you can show notifications to the user or an unread message count badge,
+* subscribe to room events such as onOpen, onClose and onReopened, so you'll be instantly notified of room status changes,
 * react on visibility changes (user can hide the view on its own),
 * handle opened links in a custom way,
 * handle errors coming from chat view.

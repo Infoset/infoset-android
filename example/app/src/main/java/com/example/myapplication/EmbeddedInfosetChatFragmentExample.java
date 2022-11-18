@@ -71,6 +71,21 @@ public class EmbeddedInfosetChatFragmentExample extends Fragment implements Info
     }
 
     @Override
+    public void onRoomOpened(long roomId) {
+        Toast.makeText(getActivity(), "onRoomOpened " + roomId, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onRoomClosed(long roomId) {
+        Toast.makeText(getActivity(), "onRoomClosed" + roomId, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onRoomReopened(long roomId) {
+        Toast.makeText(getActivity(), "onRoomReopened" + roomId, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
     public boolean handleUri(Uri uri) {
         return false;
     }
