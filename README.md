@@ -14,7 +14,7 @@ Infoset Android SDK supports API 16 and above.
 Add the following dependency to your app's `build.gradle` file:
 ```gradle
 dependencies {
-    implementation 'app.infoset.android:infoset-sdk:1.0.2'
+    implementation 'app.infoset.android:infoset-sdk:1.2.0'
 }
 ```
 
