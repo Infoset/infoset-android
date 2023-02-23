@@ -14,6 +14,6 @@ public class BaseApplication extends Application {
     }
 
     public static InfosetChatConfiguration getInfosetChatConfiguration() {
-        return new InfosetChatConfiguration(INFOSET_API_KEY, INFOSET_ANDROID_KEY, null, null, null);
+        return new InfosetChatConfiguration(INFOSET_API_KEY, INFOSET_ANDROID_KEY, null, null, null, null);
     }
 }
