@@ -217,6 +217,7 @@ Intent intent = new Intent(context, app.infoset.android.InfosetChatActivity.clas
 Bundle config = new InfosetChatConfiguration.Builder()
 	.setApiKey("<api_key>")
 	.setAndroidKey("<android_key>")
+	.setWebviewUrlKey("<chat_url>") // optional, allows you to access onpremise chat settings
 	.setTags("<comma_separated_tags>") // optional, allows you to route chats to specific tags
 	.setVisitor(new InfosetChatVisitor(...)) // // optional, you can give `null` for anonymous visitors or build an InfosetChatVisitor object by providing logged-in user's details
   .setColor("override_color") // optional, allows you to override your chat widget's primary color
