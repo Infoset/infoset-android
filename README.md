@@ -12,9 +12,10 @@ Infoset Android SDK allows you to integrate [Infoset Chat](https://infoset.app) 
 Infoset Android SDK supports API 16 and above.
 
 Add the following dependency to your app's `build.gradle` file:
+
 ```gradle
 dependencies {
-    implementation 'app.infoset.android:infoset-sdk:1.3.2'
+    implementation 'app.infoset.android:infoset-sdk:1.3.3'
 }
 ```
 
@@ -23,6 +24,7 @@ Your application will need a permission to use the Internet. Add the following l
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 ```
+
 <div class="clear"></div>
 
 You will need to include the [READ_EXTERNAL_STORAGE](http://developer.android.com/reference/android/Manifest.permission.html#READ_EXTERNAL_STORAGE) permission if you have enabled attachments in your Infoset chat widget:
@@ -30,6 +32,7 @@ You will need to include the [READ_EXTERNAL_STORAGE](http://developer.android.co
 ```xml
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 ```
+
 <div class="clear"></div>
 
 # Usage
@@ -55,8 +58,8 @@ configuration = new InfosetChatConfiguration(
 
 There are two recommended ways to use InfosetChatView.
 
-* Full screen InfosetChatView added to the root of your activity, or
-* XML embedded InfosetChatView to control placement and size
+- Full screen InfosetChatView added to the root of your activity, or
+- XML embedded InfosetChatView to control placement and size
 
 ### Full Screen Window
 
@@ -129,12 +132,12 @@ public boolean onBackPressed() {
 
 This listener gives you opportunity to:
 
-* handle the case when the user wants to attach a file in chat,
-* subscribe to incoming messages, so that you can show notifications to the user or an unread message count badge,
-* subscribe to room events such as onOpen, onClose and onReopened, so you'll be instantly notified of room status changes,
-* react on visibility changes (user can hide the view on its own),
-* handle opened links in a custom way,
-* handle errors coming from chat view.
+- handle the case when the user wants to attach a file in chat,
+- subscribe to incoming messages, so that you can show notifications to the user or an unread message count badge,
+- subscribe to room events such as onOpen, onClose and onReopened, so you'll be instantly notified of room status changes,
+- react on visibility changes (user can hide the view on its own),
+- handle opened links in a custom way,
+- handle errors coming from chat view.
 
 You can subscribe to these events by implementing `InfosetChatView.ChatEventsListener` in your activity/fragment.
 
