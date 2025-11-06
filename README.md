@@ -15,7 +15,7 @@ Add the following dependency to your app's `build.gradle` file:
 
 ```gradle
 dependencies {
-    implementation 'app.infoset.android:infoset-sdk:1.3.3'
+    implementation 'app.infoset.android:infoset-sdk:1.3.7'
 }
 ```
 
